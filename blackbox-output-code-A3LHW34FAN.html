@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blooming Flowers Shop</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
+        header { background-color: #4CAF50; color: white; text-align: center; padding: 1rem; }
+        nav { background-color: #333; color: white; padding: 0.5rem; text-align: center; }
+        nav a { color: white; margin: 0 1rem; text-decoration: none; }
+        section { padding: 2rem; max-width: 1200px; margin: auto; }
+        .gallery { display: flex; flex-wrap: wrap; gap: 1rem; }
+        .gallery img { width: 200px; height: 150px; object-fit: cover; border-radius: 5px; }
+        footer { background-color: #333; color: white; text-align: center; padding: 1rem; }
+        @media (max-width: 600px) { .gallery { flex-direction: column; } }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Blooming Flowers Shop</h1>
+        <p>Fresh flowers for every occasion</p>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="home">
+        <h2>Home</h2>
+        <p>Discover beautiful arrangements for birthdays, weddings, and more. We deliver locally!</p>
+    </section>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Established in 2020, Blooming Flowers is your go-to for vibrant, fresh blooms. We source from local farms for quality and sustainability.</p>
+    </section>
+    <section id="products">
+        <h2>Our Products</h2>
+        <div class="gallery">
+            <img src="https://via.placeholder.com/200x150?text=Roses" alt="Roses">
+            <img src="https://via.placeholder.com/200x150?text=Tulips" alt="Tulips">
+            <img src="https://via.placeholder.com/200x150?text=Lilies" alt="Lilies">
+            <img src="https://via.placeholder.com/200x150?text=Bouquet" alt="Bouquet">
+        </div>
+        <p>Prices start at $25. Custom orders available!</p>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@bloomingflowers.com | Phone: (123) 456-7890 | Address: 123 Flower St, City, State</p>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message"></textarea><br>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2023 Blooming Flowers Shop. All rights reserved.</p>
+    </footer>
+    <script>
+        // Simple gallery click to enlarge (basic JS)
+        const images = document.querySelectorAll('.gallery img');
+        images.forEach(img => {
+            img.addEventListener('click', () => {
+                alert('Image clicked! In a real site, this could open a modal.');
+            });
+        });
+    </script>
+</body>
+</html>
